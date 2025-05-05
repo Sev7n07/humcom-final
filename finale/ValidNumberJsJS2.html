@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid Nums | Lab 2</title>
+</head>
+<body>
+    
+    <div align="center">
+        <h1>Textbox</h1>
+        <div class="A">
+        <input type="text" id="num1" placeholder="Enter a number">
+        <button onclick="Even()">Submit</button>
+        <h2> Check: 
+            <span id="result1"></span><br>
+            <span id="result2"></span><br>
+        </h2>
+        </div>
+
+    <Script type="text/javascript">
+        function Even() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            
+                if (num1 % 2 == 0) {
+                    document.getElementById('result1').textContent = " (" + num1 + ") Is an Odd"; // Result 1
+                } else {
+                    document.getElementById('result1').textContent = " (" + num1 + ") Is an Even"; // Result 1
+                }
+                if (num1 <= 1) {
+                    document.getElementById('result2').textContent = " (" + num1 + ") Invalid!"; // Result 2
+            }
+        }
+    </Script>
+</body>
+</html>

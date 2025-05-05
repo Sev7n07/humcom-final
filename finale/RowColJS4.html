@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row & Col | Lab 4</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 350px;
+        }
+        td, th {
+            border: 1px solid #333;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body align="center">
+    <h1>Row and Column</h1>
+
+    <script>
+        const numRows = parseInt(prompt("ENTER NUMBER OF ROWS:"));
+        const numCols = parseInt(prompt("ENTER NUMBER OF COLUMNS:"));
+        function generateMultiplicationTable(rows, cols) {
+            let html = "<table>";
+            for (let i = 1; i <= rows; i++) {
+                html += "<tr>";
+                for (let j = 1; j <= cols; j++) {
+                    html += `<td>${i * j}</td>`;
+                }
+                html += "</tr>";
+            }
+            html += "</table>";
+            return html;
+        }
+        document.write(generateMultiplicationTable(numRows, numCols));
+    </script>
+</body>
+</html>

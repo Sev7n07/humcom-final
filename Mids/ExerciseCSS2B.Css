@@ -1,0 +1,25 @@
+body {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: antiquewhite;
+  }
+  table, th, td {
+      border: 3px solid rgb(173, 100, 3);
+      border-collapse: collapse;
+      text-align: center;
+      background-color: rgb(255, 220, 204);
+      margin: auto;
+      margin-bottom: 80px;
+      margin-top: 140px;
+  }
+
+  th {
+      background-color: rgb(255, 192, 140);
+  } 
+  td {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  h3 {
+    text-align: center;
+    font-size: 30px;
+  }

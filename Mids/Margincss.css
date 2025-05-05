@@ -1,0 +1,30 @@
+body {
+    margin: 100px 40px 10px 70px;
+    font-family: Arial;
+    background-color: peachpuff;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+ol {
+    margin: 100px;
+}
+h1, h2, h3 {
+    color: red;
+    text-align: center;
+}
+
+
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: rgb(223, 223, 223);
+    }
+
+    th {
+        background-color: rgb(107, 109, 112);
+    } 
